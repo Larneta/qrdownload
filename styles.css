@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(199, 223, 231)
+
+}
+.qr-wrapper { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}    
+.qr-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15); 
+    text-align: center;
+    width:18%;
+    font-size: 15px;
+    font-family: 'outfit';
+       
+  
+
+
+}
+
+.qr-container img {
+    max-width: 100%;
+    height:auto;
+    border-radius: 15px;
+  
+    
+}
+@media (max-width: 600px) {
+    .qr-container {
+    background-color: green;
+    }
+}
+
+    
