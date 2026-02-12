@@ -1,0 +1,74 @@
+
+:root {
+    --light-grayish-blue: #d5e1ef;
+    --grayish-blue: #7d889e;
+    --dark-blue: #1f314f;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--light-grayish-blue);
+}
+
+.qr-card {
+    width: 320px;
+    border-radius: 20px;
+
+}
+
+
+
+.qr-image-container img {
+    background-color: #2c7dfa; 
+    width: 280px
+
+}
+
+.qr-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    line-height: 1.2;
+}
+
+.qr-description {
+    font-size: 0.95rem;
+    color: var(--grayish-blue);
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .qr-card {
+    background-color: green;
+    }
+}
+/* --- Desktop Styles (Already in my CSS) --- */
+.container {
+  display: flex;
+  flex-direction: row; /* Side-by-side on desktop */
+  width: 100px;
+}
+
+/* --- MOBILE VIEW OVERRIDE --- */
+/* This kicks in when the screen is 768px wide or smaller */
+@media screen and (max-width: 768px) {
+  
+  .container {
+    flex-direction: column; /* Stack vertically for mobile */
+    width: 100%;            /* Expand to fill phone screen */
+    padding: 20px;
+  }
+
+  .qr-card {
+    width: 40%;             /* Make card wider on small screens */
+    margin: 0 auto;        /* Center it */
+  }
+
+  .qr-image-container img {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.2rem;      
+  }
+}

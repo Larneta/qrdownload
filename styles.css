@@ -31,10 +31,9 @@ body {
   
     
 }
+
 @media (max-width: 600px) {
     .qr-container {
     background-color: green;
     }
 }
-
-    
